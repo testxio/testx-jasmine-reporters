@@ -21,5 +21,4 @@ addReporters = (opts) ->
   addHtmlReporter opts?.html
   addSpecReporter opts?.spec
 
-module.exports =
-  use: addReporters
+module.exports = addReporters

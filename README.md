@@ -8,7 +8,7 @@ A package for quick and easy installation of Jasmine reporters.
 ### To add Jasmine reports to your test run
 ```
   reporters = require 'testx-jasmine-reporters'
-  reporters.use
+  reporters
     junit: # set to false to omit this reporter
       dir: 'results/junit' # defaults to 'testresults/junit'
       file: 'junit-' # defaults to 'junit'
@@ -19,10 +19,13 @@ A package for quick and easy installation of Jasmine reporters.
 
 ```
 
-You can have all reports installed with their default values if you omit the corresponding options attribute. This means that if you just invoke *use* without an argument all reporters will be added with their default values.
+You can have all reports installed with their default values if you omit the corresponding options attribute. This means that if you just invoke it without an argument all reporters will be added with their default values, i.e.
+```
+  require('testx-jasmine-reporters')()
+```
 
 If you do not want to add certain reporter simply set the corresponding option attribute to *false*. For example if you do not want to use the HTML reporter do
 ```
-  reporters.use
+  reporters
     html: false
 ```
