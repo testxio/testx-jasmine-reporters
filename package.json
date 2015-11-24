@@ -1,13 +1,13 @@
 {
   "name": "testx-jasmine-reporters",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A package for quick and easy installation of Jasmine reporters.",
   "main": "index.coffee",
   "dependencies": {
     "coffee-errors": "^0.8.6",
-    "jasmine-reporters": "^1.0.1",
-    "jasmine-spec-reporter": "~0.6.0",
-    "protractor-html-screenshot-reporter": "0.0.17"
+    "jasmine-reporters": "^2.0.7",
+    "jasmine-spec-reporter": "~2.4.0",
+    "protractor-jasmine2-html-reporter": "0.0.5"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0"
