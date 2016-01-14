@@ -1,6 +1,6 @@
 {
   "name": "testx-jasmine-reporters",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A package for quick and easy installation of Jasmine reporters.",
   "main": "index.coffee",
   "dependencies": {

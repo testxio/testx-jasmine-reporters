@@ -4,13 +4,11 @@ JasmineReporters = require 'jasmine-reporters'
 
 addJunitReporter = (opts) ->
   unless opts is false
-    dir = opts?.dir or 'testresults/junit'
-    file = opts?.file or 'junit'
-    consolidateAll = opts?.consolidateAll or false
-    jasmine.getEnv().addReporter new JasmineReporters.JUnitXmlReporter
-        savePath: dir
-        filePrefix: file
-        consolidateAll: consolidateAll
+    options = opts or {}
+    options.savePath = opts?.dir or opts?.savePath or 'testresults/junit'
+    options.filePrefix = opts?.file or opts?.filePrefix or 'junit'
+    options.consolidateAll = if opts?.consolidateAll is undefined then true else opts?.consolidateAll
+    jasmine.getEnv().addReporter new JasmineReporters.JUnitXmlReporter options
 
 addHtmlReporter = (opts) ->
   unless opts is false
