@@ -47,3 +47,5 @@ If you do not want to add certain reporter simply set the corresponding option a
   reporters
     html: false
 ```
+
+For further details on configuring the HTML reporter please take a look at the TestX [html-reporter](https://github.com/testxio/html-reporter).
