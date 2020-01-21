@@ -4,9 +4,9 @@
   "description": "A testx package for quick and easy installation of Jasmine reporters.",
   "main": "index.coffee",
   "dependencies": {
-    "jasmine-reporters": "^2.0.7",
-    "jasmine-spec-reporter": "~2.4.0",
-    "testx-html-reporter": "0.1.0"
+    "jasmine-reporters": "^2.3.2",
+    "jasmine-spec-reporter": "~4.2.1",
+    "testx-html-reporter": "0.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
